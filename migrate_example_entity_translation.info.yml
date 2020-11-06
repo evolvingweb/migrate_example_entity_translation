@@ -1,0 +1,9 @@
+name: Migrate Example Entity Translation
+type: module
+description: Migration scripts examples for Entity Translation migration.
+dependencies:
+  - migrate_plus
+  - migrate_tools
+  - migrate_drupal
+  - node
+core_version_requirement: ^8 || ^9

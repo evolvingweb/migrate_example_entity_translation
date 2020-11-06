@@ -1,0 +1,31 @@
+id: example_creature_base
+label: Creature base data
+migration_group: entity_translation
+migration_tags:
+  - node
+  - Drupal 7
+  - Multilingual
+source:
+  plugin: d7_node
+  node_type: article
+destination:
+   plugin: entity:node
+   translations: true
+   destination_module: content_translation
+process:
+  type:
+    plugin: default_value
+    default_value: article
+  title: title
+  status: status
+  langcode: language
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_log: log
+  field_one_liner: field_one_liner
+  body/value: body/value
+  body/format:
+    plugin: default_value
+    default_value: full_html
