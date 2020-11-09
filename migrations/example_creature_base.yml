@@ -10,8 +10,6 @@ source:
   node_type: article
 destination:
    plugin: entity:node
-   translations: true
-   destination_module: content_translation
 process:
   type:
     plugin: default_value

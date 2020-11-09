@@ -14,7 +14,10 @@ destination:
    destination_module: content_translation
 process:
   # Migration lookup?
-  nid: entity_id
+  nid:
+    plugin: migration_lookup
+    migration: example_creature_base
+    source: entity_id
   type:
     plugin: default_value
     default_value: article
